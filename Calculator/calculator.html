@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator.com</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Calculator.css'>
+</head>
+<body>
+    <div class='header'>
+        <h1>Calculator</h1>
+    </div>
+    <center>
+    <div class = 'cal-box'>
+        <input type='text' class='cal-input'id='cal-inputid' value = "Enter">
+        <button class='cal-AC' id='buttonAC' data-value="AC">AC</button>
+        <button class='cal-Del' id='buttonDel' data-value="Del">Del</button>
+        <button class='cal-s' id='buttonans' data-value="/">/</button>
+        <button class='cal-s' id='button+' data-value="+">+</button>
+        <button class='cal-1' id='button1' data-value="1">1</button>
+        <button class='cal-1' id='button2' data-value="2">2</button>
+        <button class='cal-1' id='button3' data-value="3">3</button>
+        <button class='cal-s' id='button-' data-value="-">-</button>
+        <button class='cal-1' id='button4' data-value="4">4</button>
+        <button class='cal-1' id='button5' data-value="5">5</button>
+        <button class='cal-1' id='button6' data-value="6">6</button>
+        <button class='cal-s' id='button*' data-value="*">*</button>
+        <button class='cal-1' id='button7' data-value="7">7</button>
+        <button class='cal-1' id='button8' data-value="8">8</button>
+        <button class='cal-1' id='button9' data-value="9">9</button>
+        <button class='cal-1' id='button0' data-value="0">0</button>
+        <button class='cal-ans' id='buttonans' data-value="Ans">Ans</button> 
+    </div>
+</center>>
+    <script>
+        const display = document.querySelector(".cal-input");
+        const buttons = document.querySelectorAll("button");
+        const specialChars = ["/","*" ,"+","-"];
+        let output = "";
+
+        const calculate  = (btnValue) => {
+            if(btnValue == "Ans") {
+                output  = eval(output)
+            }       
+            else if(btnValue === "AC"){
+                output = "";
+            }
+            else if(btnValue === "Del"){
+                output = output.toString().slice(0,-1);
+            } else{
+                if (output ==="" && specialChars.includes(btnValue) ) return;
+                output += btnValue;
+            }
+            display.value = output;
+        };
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", (e) => calculate(e.target.dataset.value));
+        });
+
+
+    </script>
+</body>
+</html>
