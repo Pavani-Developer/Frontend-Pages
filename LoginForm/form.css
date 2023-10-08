@@ -1,0 +1,71 @@
+form{
+    height: 700px;
+    width: 500px;
+    background-color: rgb(186, 186, 187);
+    position: relative;
+    margin-top: 5px;
+    margin-right: 270px;
+    margin-left: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form h1{
+    color: rgb(9, 9, 9);
+    font-family: 'Times New Roman', Times, serif;
+    border: 10px;
+    text-shadow: 5px 5px 5px rgb(50, 161, 169);
+    padding-top: 20px;
+    
+}
+table{
+    table-layout: auto;
+    border-spacing: 40px;
+    
+}
+#text{
+    color: rgb(13, 14, 14);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+}
+#input-type input{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(190, 227, 237);
+    border: none;
+    padding-right: 50px;
+}
+#input-type input:focus{
+        border: 3px solid rgb(43, 144, 246);
+    }
+
+body{
+    background-image: url(jarvis.jpg);
+    object-fit:contain;
+    opacity: 0.8;
+}
+.elements{
+    padding-top: 30px;
+    margin-top: 50px;
+}
+.submit-button{
+    margin-top: 15px;
+    background-color: rgb(3, 239, 243);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    color: rgb(9, 3, 5);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.submit-button:hover{
+    font-size: 18px;
+}
+.submit-button:active{
+    background-color:rgb(6, 93, 64) ;
+}

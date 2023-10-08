@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>facebook login page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(242, 247, 250);
+        }
+        #left{
+            float: left;
+        }
+        #right{
+            float: right;
+        }
+        #logo{
+            padding-left: 248px;
+            height: 50px;
+            width: 300px;
+            margin-top: 180px;
+            margin-bottom:0px;
+
+        }
+        #caption{
+            padding-left: 33px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            overflow: 2;
+            line-height: 1.5em;
+            height: 3em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-bottom: 112px;
+        
+        }
+        #box{
+            height: 350px;
+            width: 396px;
+            background-color: white;
+            position: relative;
+            margin-top: 130px;
+            margin-right: 270px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #text-box input {
+            margin-left: 28px;
+            margin-top: 20px;
+            width: 340px;
+            height: 48px;
+            padding-left: 18px;
+            font-size: medium;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border-color: rgb(216, 215, 215);
+            outline:none;
+            border-width: 1px;
+            
+        }
+        #text-box input:focus {
+            border: 3px solid rgb(43, 144, 246);
+        }
+        #login{
+            margin-left: 28px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 340px;
+            height: 48px;
+            border-radius: 5px;
+            border:none;
+            background-color:rgb(43, 144, 246) ;
+            color: white;
+            font-size: 20px;
+            cursor:pointer;
+            font-weight: 700;
+        }
+        #link{
+            margin-bottom: 20px;
+        }
+        #link a{
+            margin-left: 28px;
+            padding-left: 100px;
+            color:rgb(74, 159, 244);
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
+        #link a:hover{
+            text-decoration: underline;
+        }
+        #line{
+            opacity: 0.5;
+        }
+        #create{
+            margin-left: 110px;
+            margin-top: 19px;
+            padding: 15px;
+            border: none;
+            background-color: #42b72a;
+            font-size: 17px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+
+        }
+        #create:hover{
+            background-color: #39a025;
+        }
+        #bottom-text{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 25px;
+            margin-left: 40px;
+            font-size: 14px;
+            
+        }
+        #bottom-text b:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id = "left">
+        
+        <div id = "logo">
+            <img src = "https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg
+            " alt = "facebook">
+            <p id = "caption">Facebook helps you connect and share <br>with the people in your life. </p>
+
+        </div>
+    </div>
+    <div id = "right">
+        <div id = box>
+            <div id = text-box>
+            <input type = "text" placeholder = "Enter email or phone number">
+            <input type = "text" placeholder = "Password">
+            <button id = "login">Log in</button>
+        </div>
+        <div id = 'link'>
+            <a href = "">Forgotten password?</a>
+        </div>
+        <hr id = "line">
+        <button id = "create">Create new account</button>
+        </div>
+        <div id ="bottom-text">
+            <b>Create a Page</b> for a celebrity, brand or business.
+        </div>
+    </div>
+    
+</body>
+</html>

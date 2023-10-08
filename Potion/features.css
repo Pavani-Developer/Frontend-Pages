@@ -1,0 +1,92 @@
+body{
+    background-color: rgba(241, 213, 192, 0.851);
+}
+.navigation-bar{
+    height: 60px;
+    width: fill;
+    background-color:white;
+    margin-top: 0;
+}
+.navigation-bar  img{
+    height: 50px;
+    width: 50px;
+    padding-left: 30px;
+    float: left;
+    cursor: pointer;
+}
+.navigation-bar #caption{
+    margin-top: 10px;
+    padding-top: 0;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight:600;
+    padding-right: 320px;
+    cursor: pointer;
+}
+nav .elements-background {
+    width: 560px;
+    height: 40px;
+    background-color: rgb(227, 167, 232);
+    margin-left: 500px;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-left: 30px ;
+
+}
+.navigation-elements .elements-background a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin-right: 35px;
+    color: black;
+}
+.navigation-elements .elements-background a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.login{
+    float: right;
+    margin-top: 10px;
+    padding-right:10px ;
+}
+.login a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.login a:hover{
+    color: rgb(227, 167, 232);
+}
+.login button{
+    padding: 12px 20px 12px 20px;
+    color: white;
+    background-color: rgb(227, 167, 232);
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.content p{
+    margin-top: 150px;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600; 
+    text-align: center;
+}  
+.content p #color{
+    background-color: rgb(197, 251, 233);
+    border-radius: 5px;
+}
+
+.content video{
+    height: 500px;
+    width: 500px;
+    margin-left: 500px;
+    margin-right: 300px;
+    outline: none;
+    border-radius: 50px;
+}
+
