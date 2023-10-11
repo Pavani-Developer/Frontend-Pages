@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Word Counter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?size=626&ext=jpg);
+            background-size: cover;
+        }
+        .header{
+            height: 80px;
+            width: 300px;
+            background-color: rgb(139, 139, 243);
+            border: none;
+            border-radius: 10px;
+            
+        }
+        .header h1{
+            padding: 15px;
+            color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 0;
+        }
+        .main-box{
+            height: 450px ;
+            width: 600px;
+            border-style:groove;
+            background-color: rgb(163, 227, 245);
+            float: right;
+            margin-right: 150px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-color:rgb(139, 139, 243) ;
+            margin-top: 100px;
+        }
+        #context{
+            text-align: center;
+            font-size: 25px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(65, 107, 144);
+        }
+        #text-box{
+            width: 90%;
+            margin: 20px;
+            height: 100px;
+            border-color: blue;
+            background-color: rgb(228, 228, 251);
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        #count-button{
+            margin-left: 220px;
+            margin-top: 50px;
+            padding: 10px 20px 10px 20px;
+            border: none;
+            border-radius: 15px;
+            font-size: 20px;
+            background-color: rgb(114, 114, 203);
+            color: aliceblue;
+            cursor: pointer;
+        }
+        #count-button:hover{
+            background-color: rgb(144, 144, 241);
+
+        }
+        #count-button:active{
+            color: cornflowerblue;
+        }
+        .count-result{
+            margin-top: 50px;
+            margin-left: 180px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .count-result #answer{
+            background-color: rgb(163, 227, 245);
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #info{
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 700;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class = "header" >
+        <h1>Word Counter</h1>
+        
+    </div>
+</center>
+        
+
+    
+        <div class = "main-box">
+            <p id = 'context'> Type in the below text box</p>
+            
+                <textarea type="text" id = 'text-box' ></textarea>
+                <button onclick = "countWords()"  id="count-button" >Count words</button><br>
+                <div class = 'count-result'>
+                    <label for="results" id = 'label'>Word count: </label>
+                    <input type="text" id ="answer" name ="result" value = "0">
+            </div>
+    
+            
+        </div>
+    <script>
+         
+        function countWords() {
+            var text = document.getElementById("text-box").value;
+            var count = 0;
+            for (var i = 0; i < text.length; i++) {
+                var word = text[i];
+          
+                if (word == " ") {
+                    count += 1;
+                }
+            }
+          
+            count += 1;
+            document.getElementById('answer').value = count;
+
+            if(count % 2 ==0){
+                document.getElementById("label").style.color = "green";
+                document.getElementById("answer").style.color = "green";
+            } else {
+                document.getElementById("label").style.color = "red";
+                document.getElementById("answer").style.color = "red";
+            }
+          
+            
+        }
+    
+    </script>
+</body>
+</html>

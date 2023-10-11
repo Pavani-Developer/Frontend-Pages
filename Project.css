@@ -1,0 +1,109 @@
+/* projectk.css */
+
+.App {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    height: 1000px;
+    width: 200px;
+    background-image: linear-gradient(to top, rgb(187, 39, 39) , rgb(250, 203, 14));
+    position: relative;
+    border-radius: 15px;
+    padding-top: 0px;
+    margin-left: 0;
+  }
+  
+  .sidebar ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: aliceblue;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right .box {
+    background-color: brown;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    margin-right: -1900px;
+    margin-bottom: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: White;
+
+  }
+  
+  .right input {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+  }
+  
+  .right button {
+    background-color: #faa006;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-top: 10px; 
+    margin-left:200px;
+    transition: background-color 0.1s;
+    border-radius: 10px;
+    
+  }
+    
+    .right input:hover {
+    border-color: #0d0d0c;
+}
+
+.right button:hover {
+    background-color: #f6ff00;
+    color: black;
+  }
+
+
+
+  .fun{
+    height: 400px;
+    width: 500px;
+    border-style: groove;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    margin-right: 650px;
+    font-size: 10px;
+    margin-top: 80px;
+    border-radius: 200px / 100px;
+    background-color: #f38e22;
+    
+    
+  }
+  .fun h1{
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: rgb(3, 17, 16);
+  }
+ 

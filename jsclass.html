@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS class</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        button{
+            background-color: aquamarine;
+            color: black;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    Cart  Quantity <br>
+    <button onclick = "
+        console.log(`cart Quantity : ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+        if (cartQuantity < 10){
+            cartQuantity = cartQuantity + 1
+            console.log(`cart Quantity : ${cartQuantity}`);
+        } else{
+            console.log('Do not update cart quantity');
+        }
+    ">Add to Cart</button>
+
+    <button onclick="
+        if (cartQuantity < 10){
+            cartQuantity = cartQuantity + 2
+            console.log(`cart Quantity : ${cartQuantity}`);
+        }else{
+            console.log('Do not update cart quantity');
+        }
+    ">+2</button>
+
+    <button onclick="
+        if (cartQuantity < 10){
+            cartQuantity = cartQuantity + 3
+            console.log(`cart Quantity : ${cartQuantity}`);
+        }else{
+            console.log('Do not update cart quantity it reaches maximum quantity level');
+
+        }
+    ">+3</button>
+
+    <button onclick="
+        cartQuantity = 0
+        console.log('Cart quantity was reset.')
+        console.log(`cart Quantity : ${cartQuantity}`);
+
+    ">Reset Cart</button>
+
+    <button onclick="
+        if (cartQuantity < 10){
+            cartQuantity +=4
+            console.log(`cart Quantity : ${cartQuantity}`);
+        }else{
+            console.log('Do not update cart quantity it reaches maximum quantity level');
+        }
+    
+    ">+4</button>
+    <button onclick="
+        if (cartQuantity < 10){
+            cartQuantity +=5
+            console.log(`cart Quantity : ${cartQuantity}`);
+        }else{
+            console.log('Do not update cart quantity it reaches maximum quantity level');
+        }
+    ">+5</button>
+
+    <button onclick="
+        if (cartQuantity === 0){
+            console.log('Your cart is empty you cannot remove any items'); 
+        }else{
+            cartQuantity--
+            console.log(`cart Quantity : ${cartQuantity}`);
+        }
+
+    ">Remove from Cart</button>
+    
+    <button onclick="
+        if (cartQuantity === 0){
+            console.log('Your cart is empty you cannot remove any items'); 
+        }else{
+            cartQuantity -= 2;
+            console.log(`cart Quantity : ${cartQuantity}`);
+        }
+    ">-2</button>
+
+    <button onclick="
+        if (cartQuantity === 0){
+            console.log('Your cart is empty you cannot remove any items'); 
+        }else{
+            cartQuantity -= 3;
+            console.log(`cart Quantity : ${cartQuantity}`);
+        }
+    ">-3</button>
+    <!--<button onclick="GameHeads()">Heads</button>
+    <button onclick="GameTails()">Tails</button>-->
+
+    <script>
+        /*function GameHeads(){
+            let compguess = Math.random();
+            let result = (compguess < 0.5)?'Heads':'Tails';
+            if (result == 'Heads'){
+                alert(`You choose Heads and computer Choose ${result} ,Its Draw!`)
+            }else if (result == 'Tails'){
+                alert(`You choose Heads and computer Choose ${result} ,  You won the Game!`)
+        }
+    }
+        function GameTails(){
+            let compguess = Math.random();
+            let result = (compguess < 0.5)?'Heads':'Tails';
+            if (result == 'Tails'){
+                alert(`You choose Tails and computer Choose ${result} ,Its Draw!`)
+            }else if (result == 'Heads'){
+                alert(`You choose Tails and computer Choose ${result} ,  You Lost the Game!`)
+        }
+    }*/
+        
+        let cartQuantity = 0;
+        /*let name = 'Pavani'
+        //console.log(`my name is : ${name}`);
+        let cost = (500 +(300 * 2) + 900 ) / 100;
+        let tax = cost * 0.1
+        //console.log(`10% of tax is: ${tax}`);
+        //console.log(`The total cost is : ${cost + tax}`);
+        let hour = 7;
+
+        if(hour>=6 && hour <= 12){
+            //console.log(`Good Morning! ${name}`);
+        }else if(hour>12 && hour <= 17){
+            //console.log(`Good afternoon! ${name}`);
+        }else {
+        //    console.log(`Good night!' ${name}`);
+        }
+
+        let age = 58;
+        let isHoliday = false;
+
+        let result = isHoliday && (age<=6 || age>=65) ? 'Discount':'No discount';
+        //console.log(result);*/
+            
+    </script>
+</body>
+</html>
