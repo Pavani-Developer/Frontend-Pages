@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .car-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .car-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .car-container:hover .car-image {
+            opacity: 0;
+        }
+
+        .car-container:hover .car-image:first-child {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="car-container">
+        <img src="C:\Users\91630\Downloads\oneonefrontview.jpeg">
+
+        <img src="C:\Users\91630\Downloads\oneoneleftfrontthreequarter.jpeg" alt="Car Front View" class="car-image">
+
+        <img src="C:\Users\91630\Downloads\oneoneleftsideview.jpeg" alt="Car Front View" class="car-image">
+        <img src="C:\Users\91630\Downloads\oneoneleftrearthreequarter.jpeg" alt="Car Front View" class="car-image">
+        <img src="C:\Users\91630\Downloads\oneonerearview.jpeg" alt="Car Front View" class="car-image">
+        <img src="C:\Users\91630\Downloads\oneonerightsideview.jpeg" alt="Car Front View" class="car-image">
+        <img src="C:\Users\91630\Downloads\oneonerightfrontthreequarter.jpeg" alt="Car Front View" class="car-image">
+        <img src="C:\Users\91630\Downloads\oneimage.jpeg" alt="Car Front View" class="car-image">
+        <!-- Add 5 more images with their respective URLs -->
+
+    </div>
+</body>
+</html>

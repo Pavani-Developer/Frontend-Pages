@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    background-image: url('bmi.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.calculator {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 0 10px rgb(91, 4, 231);
+    margin-left: 10%;
+    margin-right: auto;
+    max-width: 400px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"], select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    text-align: left; 
+}
+
+button {
+    background-color: #751fed;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5303b0;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #f6f3f3;
+    background-color: #4119f0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1600px) {
+    .calculator {
+        width: 90%; 
+    }
+    #result {
+        width: 50%; 
+        border-radius: 25px;
+        height: 50%;
+    }
+}
